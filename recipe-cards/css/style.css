@@ -1,0 +1,153 @@
+/***** RECIPE CARD *****/
+
+  /***** BASE STYLES *****/
+  body{
+    background: #DAF7F6;
+    color: #3B3B3B;
+    font-family:'open sans',sans-serif;
+    line-height: 16px;
+    font-size:12px;
+  }
+/***** recipe collection *****/
+header{
+  background: white;
+  text-align: center;
+}
+
+h1{
+  display: inline-block;
+  padding: 40px 0;
+  margin: 0;
+  font-family: 'Montserrat';
+  color: #F16059;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/***** cheated on solution code for header img *****/
+
+header img {
+	margin-right: 16px;
+}
+
+main{
+    width: 1000px;
+      margin: 0 auto;
+}
+/***** never put commas between numbers in margin*****/
+.card{
+  margin: 25px 0;
+  overflow: auto;
+}
+.image{
+  float: left;
+  width:500px;
+  height: 550px;
+}
+/***forgot to put width & height in recipe - that was preventing it from
+lining up next to instead of below***/
+.recipe{
+  float:left;
+  padding: 20px;
+  background: White;
+  box-sizing: border-box;
+  width: 500px;
+  height: 550px;
+}
+
+#cookies .image{
+    background-image: url('../img/gluten-free-sugar-cookies.jpg');
+    background-size: cover;
+  }
+#pesto .image{
+  background-image: url('../img/nut-free-pesto.jpg');
+  background-size: cover;
+}
+#salad .image{
+  background-image: url('../img/watermelon-salad.jpg');
+  background-size: cover;
+}
+/***I only used h2 not .recipe but it made no difference when I added it
+?????why include it????
+did not add margin top - didn't add line height but no difference ??why add it??***/
+.recipe h2 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 29px;
+  color: #F16059;
+}
+/***33% of parent element but what is parent? Main? was missing border-style and it
+kept it from showing up! ***/
+.time {
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #3B3B3B;
+  overflow: auto;
+}
+/*** this was added in the .time above instead of separated to div
+did not add box sizing and that was a big problem! ***/
+.time  div{
+    float: left;
+    padding-left: 6px;
+    width: 33.333%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+/***missed all of this with time cook***/
+.time .cook{
+  border-width: 0 1px;
+	border-style: solid;
+	border-color: #3B3B3B;
+}
+  /*** i reversed the order as img .time and it was not showing up, didn't add
+  margin right or vertical align but made no difference after adding ???WHY??***/
+.time img {
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+/***This is not working to put icons on same line! ???WHY??***/
+.time-details{
+    text-transform: uppercase;
+    display: inline-block;
+}
+.time strong {
+	font-family: 'Montserrat', sans-serif;
+}
+.columns{
+  overflow:auto;
+}
+.directions{
+  float:left;
+  width: 240px;
+}
+.ingredients{
+  float:left;
+  width: 205px;
+  margin-right: 10px;
+}
+.recipe h3{
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #F16059;
+  border-top: 1px solid #3B3B3B;
+  border-bottom: 1px solid #3B3B3B;
+  width: auto;
+}
+.ingredients ul{
+  list-style-type: square;
+  line-height: 25px;
+  padding-left: 15px;
+}
+.directions ol{
+  padding-left: 15px;
+    line-height: 22px;
+}
